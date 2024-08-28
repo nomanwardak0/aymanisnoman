@@ -1,0 +1,85 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Share Tech Mono', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000; /* Dark grey background */
+    color: #333; /* Dark grey text */
+}
+
+.container {
+    text-align: center;
+    background-color: #000000; /* Black background for the form */
+    padding: 20px;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Required for absolute positioning of child elements */
+}
+
+.logo {
+    display: flex;
+    justify-content: center; /* Center logo horizontally */
+}
+
+.logo img {
+    max-width: 200px; /* Increased maximum width for the logo */
+    height: auto; /* Maintain aspect ratio */
+    width: auto; /* Maintain aspect ratio */
+}
+
+input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 25px;
+    border: 1px solid rgb(117, 117, 117);
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+}
+
+::-ms-reveal {
+    filter: invert(100%);
+}
+
+.checkbox-container {
+    text-align: left;
+    margin-bottom: 40px;
+    /* margin-left: 10px; */
+    color: rgb(255, 255, 255);
+}
+
+button {
+    width: 30%;
+    padding: 10px 20px;
+    background-color: rgb(255, 255, 255); /* White button */
+    color: rgb(0, 0, 0); /* Black text */
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: black; /* Disabled button color */
+    box-shadow: 0px 0px 0px 1px rgb(255, 255, 255) inset;
+    color: white;
+    cursor: not-allowed;
+}
+
+#norid {
+    position: absolute; /* Absolute positioning */
+    bottom: 35px; /* Distance from the bottom of the container */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    color: white;
+    font-size: 16px; /* Optional: adjust the font size if needed */
+}

@@ -1,0 +1,109 @@
+/* Basic reset */
+* {
+    margin: 0px 10px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Share Tech Mono', monospace;
+    background-color: #000000; /* Dark background color */
+    color: #e0e0e0; /* Light text color */
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.navbar {
+    /* background-color: rgb(0, 0, 0); Dark grey background for navbar */
+    padding: 10px;
+    color: #e0e0e0; /* Light text color for navbar */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: solid;
+    border-left: 50px;
+    border-right: 50px;
+    border-top: 50px;
+    border-width: 100%;
+    padding-bottom: 20px;
+}
+
+.navbar button {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: rgb(255, 255, 255); /* White text */
+    border: solid;
+    border-width: 1px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.navbar button:hover {
+    background-color: rgb(255, 255, 255); /* Light grey on hover */
+    color: black;
+    transition-duration: 0.3s;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    margin-top: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 25px;
+    padding: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    background-color: rgb(0, 0, 0); /* Dark background for textarea */
+    color: #e0e0e0; /* Light text color for textarea */
+    resize: none; /* Disable resizing */
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 16px;
+}
+
+#contentArea {
+    color: white;
+    margin-bottom: 30px;
+}
+
+#last {
+    text-align: center;
+    padding: 50px;
+    font-size: 13px;
+}
+
+hr {
+    width: 30%;
+    align-self: center;
+    box-shadow: 0px 0px 20px white;
+}
+
+a {
+    color: red;
+    text-shadow: 0px 0px 20px rgba(255, 0, 0, 0.671);
+}
+
+#head {
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.671);
+
+}
+
+#noridhead {
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.671);
+}
+
+#tophead {
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.671); 
+}
